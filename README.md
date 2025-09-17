@@ -112,3 +112,18 @@ sudo apt update && sudo apt install libasound2t64 libncurses5-dev libncurses5-de
 ```
 wget https://raw.githubusercontent.com/Digilent/digilent-xdc/refs/heads/master/Zybo-Z7-Master.xdc -O Zybo-Z7.xdc
 ```
+
+### 3.2. Add Source
+- Add XDC File
+  - `Flow Navigator` > `PROJECT MANAGER` > `Add Sources` > `Add or create constraints`
+- Add HDL Files
+  - `Flow Navigator` > `PROJECT MANAGER` > `Add Sources` > `Add or create design sources`
+
+### 3.3. Create Block Design
+- `Flow Navigator` > `IP GENERATOR` > `Create Block Design`
+
+### 3.4. Generate Bitstream
+- `Flow Navigator` > `PROGRAM AND DEBUG` > `Generate Bitstream`
+
+### 3.5. Export Hardware
+- `File` > `Export` > `Export Hardware`
