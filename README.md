@@ -39,6 +39,8 @@ unzip master.zip
 sudo mv /home/ubuntu/xilinx/vivado-boards/vivado-boards-master/new/board_files/* /opt/Xilinx/Vivado/2019.1/data/boards/board_files/
 ```
 
+- When create a project, select `ZyboZ7-20`
+
 ### 1.4. Install Cable Driver
 ```
 sudo /opt/Xilinx/Vivado/2019.1/data/xicom/cable_drivers/lin64/install_script/install_drivers/install_drivers 
