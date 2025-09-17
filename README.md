@@ -22,7 +22,24 @@ tar -xvf Xilinx_Vivado_SDK_2019.1_0524_1430.tar.gz
 
 - Install to `/opt/Xilinx/`
 
-### 1.3. Install Cable Driver
+### 1.3. Import Zybo Z7 Board File
+```
+mkdir -p /home/ubuntu/xilinx/vivado-boards
+```
+```
+cd /home/ubuntu/xilinx/vivado-boards
+```
+```
+wget https://github.com/Digilent/vivado-boards/archive/master.zip
+```
+```
+unzip master.zip
+```
+```
+sudo mv /home/ubuntu/xilinx/vivado-boards/vivado-boards-master/new/board_files/* /opt/Xilinx/Vivado/2019.1/data/boards/board_files/
+```
+
+### 1.4. Install Cable Driver
 ```
 sudo /opt/Xilinx/Vivado/2019.1/data/xicom/cable_drivers/lin64/install_script/install_drivers/install_drivers 
 ```
@@ -87,3 +104,5 @@ sudo apt update && sudo apt install libasound2t64 libncurses5-dev libncurses5-de
 > - https://fumimaker.net/entry/2020/02/06/002934
 > - https://phys-higashi.com/73/#toc8
 > - https://marsee101.blog.fc2.com/blog-entry-4027.html
+
+### 3.1. 
