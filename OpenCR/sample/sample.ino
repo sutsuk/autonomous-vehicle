@@ -27,7 +27,7 @@ void setup() {
   for (int a = 0; a < sizeof(sound_notes) / sizeof(int); a++) {
     int sound_note_duration = 1000 / sound_note_durations[a];
     tone(BDPIN_BUZZER, sound_notes[a], sound_note_duration);
-    delay((int)(sound_note_duration * 1.30));
+    delay(sound_note_duration);
     noTone(BDPIN_BUZZER);
   }
   for (int a = 0; a < NUM_BDPIN_LED; a++) {
