@@ -5,7 +5,15 @@
 > ### References
 > - https://qiita.com/is0392hr/items/919bedb5b639de8b37c1
 
-### 1.1. Install Xilinx Vivado SDK - 2019.1
+### 1.3. Install Required Packages
+```
+wget http://security.ubuntu.com/ubuntu/pool/universe/n/ncurses/libtinfo5_6.3-2ubuntu0.1_amd64.deb
+```
+```
+sudo dpkg -i libtinfo5_6.3-2ubuntu0.1_amd64.deb
+```
+
+### 1.2. Install Xilinx Vivado SDK - 2019.1
 - https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/archive.html
 
 ```
@@ -14,7 +22,7 @@ tar -xvf Xilinx_Vivado_SDK_2019.1_0524_1430.tar.gz
 
 - Install to `/opt/Xilinx/`
 
-### 1.2. Install Cable Driver
+### 1.3. Install Cable Driver
 ```
 sudo /opt/Xilinx/Vivado/2019.1/data/xicom/cable_drivers/lin64/install_script/install_drivers/install_drivers 
 ```
@@ -79,6 +87,3 @@ sudo apt update && sudo apt install libasound2t64 libncurses5-dev libncurses5-de
 > - https://fumimaker.net/entry/2020/02/06/002934
 > - https://phys-higashi.com/73/#toc8
 > - https://marsee101.blog.fc2.com/blog-entry-4027.html
-
-### 1.1. Install Xilinx Vivado
-
