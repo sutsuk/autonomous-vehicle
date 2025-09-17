@@ -1,8 +1,20 @@
 # Autonomous Vehicle
 
 ## 1. Install Developing Tools for ZYBO Z7
-### 1.1. Install Vivado Design Suite - HLx Editions Update 3 - 2019.1
+### 1.1. Install Xilinx Vivado SDK - 2019.1
 - https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/archive.html
+
+```
+tar -xvf Xilinx_Vivado_SDK_2019.1_0524_1430.tar.gz
+```
+
+- Install to `/opt/Xilinx/`
+
+### 1.2. Install Cable Driver
+```
+sudo /opt/Xilinx/Vivado/2019.1/data/xicom/cable_drivers/lin64/install_script/install_drivers/install_drivers 
+```
+
 
 ## 2. Prepare for OpenCR Development
 
