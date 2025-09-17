@@ -15,7 +15,6 @@ tar -xvf Xilinx_Vivado_SDK_2019.1_0524_1430.tar.gz
 sudo /opt/Xilinx/Vivado/2019.1/data/xicom/cable_drivers/lin64/install_script/install_drivers/install_drivers 
 ```
 
-
 ## 2. Prepare for OpenCR Development
 
 > ### References
