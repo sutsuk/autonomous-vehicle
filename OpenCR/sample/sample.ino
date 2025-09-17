@@ -5,10 +5,10 @@
 #define NUM_BDPIN_PUSH_SW 2
 
 int sound_notes[] = {
-  NOTE_E6, NOTE_G6, NOTE_E7, NOTE_C7, NOTE_D7, NOTE_G7
+  NOTE_E6
 };
 int sound_note_durations[] = {
-  4,4,4,4,4,4
+  4
 };
 int bdpin_led[NUM_BDPIN_LED] = {
   BDPIN_LED_BUILTIN,
