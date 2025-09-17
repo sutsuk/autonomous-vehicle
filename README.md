@@ -107,4 +107,7 @@ sudo apt update && sudo apt install libasound2t64 libncurses5-dev libncurses5-de
 > - https://phys-higashi.com/73/#toc8
 > - https://marsee101.blog.fc2.com/blog-entry-4027.html
 
-### 3.1. 
+### 3.1. Download Zybo Z7 XDC File
+```
+wget https://raw.githubusercontent.com/Digilent/digilent-xdc/refs/heads/master/Zybo-Z7-Master.xdc -O Zybo-Z7.xdc
+```
