@@ -145,4 +145,4 @@ wget https://raw.githubusercontent.com/Digilent/digilent-xdc/refs/heads/master/Z
 
 ### 3.5. Export Hardware
 - `File` > `Export` > `Export Hardware`
-  - Enable `include bitstream`
+  - Select `include bitstream`
