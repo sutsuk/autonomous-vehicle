@@ -13,14 +13,9 @@ wget http://security.ubuntu.com/ubuntu/pool/universe/n/ncurses/libtinfo5_6.3-2ub
 sudo dpkg -i libtinfo5_6.3-2ubuntu0.1_amd64.deb
 ```
 
-### 1.2. Install Xilinx Vivado SDK - 2019.1
-- https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/archive.html
-
-```
-tar -xvf Xilinx_Vivado_SDK_2019.1_0524_1430.tar.gz
-```
-
-- Install to `/opt/Xilinx/`
+### 1.2. Install Xilinx Vivado SDK - 2025.1
+- https://www.xilinx.com/support/download.html
+- Install to `C:\ProgramFiles\Xilinx`
 
 ### 1.3. Import Zybo Z7 Board File
 ```
@@ -36,15 +31,10 @@ wget https://github.com/Digilent/vivado-boards/archive/master.zip
 unzip master.zip
 ```
 ```
-sudo mv /home/ubuntu/xilinx/vivado-boards/vivado-boards-master/new/board_files/* /opt/Xilinx/Vivado/2019.1/data/boards/board_files/
+sudo mv /home/ubuntu/xilinx/vivado-boards/vivado-boards-master/new/board_files/* /mnt/c/ProgramFiles/Xilinx/Vivado/2019.1/data/boards/board_files/
 ```
 
 - When create a project, select `ZyboZ7-20`
-
-### 1.4. Install Cable Driver
-```
-sudo /opt/Xilinx/Vivado/2019.1/data/xicom/cable_drivers/lin64/install_script/install_drivers/install_drivers 
-```
 
 ## 2. Prepare for OpenCR Development
 
