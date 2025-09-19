@@ -111,6 +111,5 @@ wget https://raw.githubusercontent.com/Digilent/digilent-xdc/refs/heads/master/Z
 - `Flow Navigator` > `PROGRAM AND DEBUG` > `Generate Bitstream`
 
 ### 3.6. Export Hardware
-- `File` > `Export` > `Export Hardware`
-  - Select `include bitstream/binary`
-    - Selext `include bitstream`
+- `File` > `Export` > `Export Hardware` > `Include bitstream/binary`
+  - Select `Include bitstream`
