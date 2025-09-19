@@ -113,3 +113,4 @@ wget https://raw.githubusercontent.com/Digilent/digilent-xdc/refs/heads/master/Z
 ### 3.6. Export Hardware
 - `File` > `Export` > `Export Hardware` > `Include bitstream/binary`
   - Select `Include bitstream`
+  - XSA file name: `system`
