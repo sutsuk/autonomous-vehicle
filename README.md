@@ -1,40 +1,7 @@
 # Autonomous Vehicle
 
-## 1. Install Developing Tools for ZYBO Z7
-
-> ### References
-> - https://qiita.com/is0392hr/items/919bedb5b639de8b37c1
-
-### 1.3. Install Required Packages
-```
-wget http://security.ubuntu.com/ubuntu/pool/universe/n/ncurses/libtinfo5_6.3-2ubuntu0.1_amd64.deb
-```
-```
-sudo dpkg -i libtinfo5_6.3-2ubuntu0.1_amd64.deb
-```
-
-### 1.2. Install Xilinx Vivado SDK - 2025.1
+## 1. Install Xilinx Vivado SDK - 2025.1
 - https://www.xilinx.com/support/download.html
-- Install to `C:\ProgramFiles\Xilinx`
-
-### 1.3. Import Zybo Z7 Board File
-```
-mkdir -p /home/ubuntu/xilinx/vivado-boards
-```
-```
-cd /home/ubuntu/xilinx/vivado-boards
-```
-```
-wget https://github.com/Digilent/vivado-boards/archive/master.zip
-```
-```
-unzip master.zip
-```
-```
-sudo mv /home/ubuntu/xilinx/vivado-boards/vivado-boards-master/new/board_files/* /mnt/c/ProgramFiles/Xilinx/Vivado/2019.1/data/boards/board_files/
-```
-
-- When create a project, select `ZyboZ7-20`
 
 ## 2. Prepare for OpenCR Development
 
@@ -101,18 +68,27 @@ sudo apt update && sudo apt install libasound2t64 libncurses5-dev libncurses5-de
 > - https://phys-higashi.com/114/#toc12
 > - https://zenn.dev/gnico/articles/2aef82b7adef44
 
-### 3.1. Download Zybo Z7 XDC File
+### 3.1. Create New Project
+- Project name: `AutonomousVehicle`
+- Disable `Create project subdirectory`
+- Select RTL Project
+  - Enable `Do not specify sources at this time`
+  - Disable `Project is an entensible Vitis platform`
+- Download Board Data
+  - `Boards` > `Zybo Z7-20`
+
+### 3.2. Download Zybo Z7 XDC File
 ```
 wget https://raw.githubusercontent.com/Digilent/digilent-xdc/refs/heads/master/Zybo-Z7-Master.xdc -O Zybo-Z7.xdc
 ```
 
-### 3.2. Add Source
+### 3.3. Add Source
 - Add XDC File
   - `Flow Navigator` > `PROJECT MANAGER` > `Add Sources` > `Add or create constraints`
 - Add HDL Files
   - `Flow Navigator` > `PROJECT MANAGER` > `Add Sources` > `Add or create design sources`
 
-### 3.3. Create Block Design
+### 3.4. Create Block Design
 - `Flow Navigator` > `IP GENERATOR` > `Create Block Design`
 
 <div align="center"><img src="imgs/create-block-design.jpg" width="500"></div>
@@ -130,9 +106,9 @@ wget https://raw.githubusercontent.com/Digilent/digilent-xdc/refs/heads/master/Z
 - Create HDL Wrapper of the Processing System
   - `BLOCK DESIGN` > `Sources` > `system (system.bd)` > `Create HDL Wrapper` > `Let Vivado manage wrapper and auto-update`
 
-### 3.4. Generate Bitstream
+### 3.5. Generate Bitstream
 - `Flow Navigator` > `PROGRAM AND DEBUG` > `Generate Bitstream`
 
-### 3.5. Export Hardware
+### 3.6. Export Hardware
 - `File` > `Export` > `Export Hardware`
   - Select `include bitstream`
