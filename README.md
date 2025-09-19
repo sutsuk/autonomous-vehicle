@@ -104,7 +104,7 @@ wget https://raw.githubusercontent.com/Digilent/digilent-xdc/refs/heads/master/Z
 <div align="center"><img src="imgs/connect-processing-system-clock.jpg" width="500"></div>
 
 - Create HDL Wrapper of the Processing System
-  - `BLOCK DESIGN` > `Sources` > `system (system.bd)` > `Create HDL Wrapper` > `Let Vivado manage wrapper and auto-update`
+  - `BLOCK DESIGN` > `Sources` > `Design Sources` > `system (system.bd)` > `Create HDL Wrapper` > `Let Vivado manage wrapper and auto-update`
 
 ### 3.5. Generate Bitstream
 - `Flow Navigator` > `PROGRAM AND DEBUG` > `Generate Bitstream`
