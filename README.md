@@ -108,10 +108,14 @@ wget https://raw.githubusercontent.com/Digilent/digilent-xdc/refs/heads/master/Z
   - `BLOCK DESIGN` > `Sources` > `Design Sources` > `system (system.bd)` > `Create HDL Wrapper`
     - Select `Let Vivado manage wrapper and auto-update`
 
-### 3.5. Generate Bitstream
+### 3.5. Set Top-Level Entity
+- `PROJECT MANAGER` > `Sources` > `Dedign Sources` > `AutonomousVehicle(AutonomousVehicle.vhd)`
+  - Select `Set as Top`
+
+### 3.6. Generate Bitstream
 - `Flow Navigator` > `PROGRAM AND DEBUG` > `Generate Bitstream`
 
-### 3.6. Export Hardware
+### 3.7. Export Hardware
 - `File` > `Export` > `Export Hardware` > `Include bitstream/binary`
   - Select `Include bitstream`
   - XSA file name: `system`
