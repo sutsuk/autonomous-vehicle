@@ -138,16 +138,23 @@ set_property -dict { PACKAGE_PIN M17   IOSTANDARD LVCMOS33 } [get_ports { led5_b
 set_property INTERNAL_VREF 0.6 [get_iobanks 35]
 set_property -dict { PACKAGE_PIN J19   IOSTANDARD HSUL_12  } [get_ports { dphy_clk_lp_n }];
 set_property -dict { PACKAGE_PIN H20   IOSTANDARD HSUL_12  } [get_ports { dphy_clk_lp_p }];
+
 set_property -dict { PACKAGE_PIN M18   IOSTANDARD HSUL_12  } [get_ports { dphy_data_lp_n[0] }];
 set_property -dict { PACKAGE_PIN L19   IOSTANDARD HSUL_12  } [get_ports { dphy_data_lp_p[0] }];
 set_property -dict { PACKAGE_PIN L20   IOSTANDARD HSUL_12  } [get_ports { dphy_data_lp_n[1] }];
 set_property -dict { PACKAGE_PIN J20   IOSTANDARD HSUL_12  } [get_ports { dphy_data_lp_p[1] }];
+
 set_property -dict { PACKAGE_PIN H18   IOSTANDARD LVDS_25  } [get_ports { dphy_hs_clock_clk_n }];
 set_property -dict { PACKAGE_PIN J18   IOSTANDARD LVDS_25  } [get_ports { dphy_hs_clock_clk_p }];
+
+# Clock Frequency = 420 Mbps / 2 lanes = 210 MHz (4.7619... ns)
+create_clock -period 4.762 -name dphy_hs_clock_p -waveform {0.000 2.381} [get_ports dphy_hs_clock_clk_p]
+
 set_property -dict { PACKAGE_PIN M20   IOSTANDARD LVDS_25  } [get_ports { dphy_data_hs_n[0] }];
 set_property -dict { PACKAGE_PIN M19   IOSTANDARD LVDS_25  } [get_ports { dphy_data_hs_p[0] }];
 set_property -dict { PACKAGE_PIN L17   IOSTANDARD LVDS_25  } [get_ports { dphy_data_hs_n[1] }];
 set_property -dict { PACKAGE_PIN L16   IOSTANDARD LVDS_25  } [get_ports { dphy_data_hs_p[1] }];
+
 set_property -dict { PACKAGE_PIN G19   IOSTANDARD LVCMOS33 } [get_ports { cam_clk }];
 set_property -dict { PACKAGE_PIN G20   IOSTANDARD LVCMOS33   PULLUP true } [get_ports { cam_gpio }];
 set_property -dict { PACKAGE_PIN F20   IOSTANDARD LVCMOS33 } [get_ports { cam_scl }];
