@@ -60,12 +60,13 @@ sudo apt update && sudo apt install libasound2t64 libncurses5-dev libncurses5-de
 ## 3. Zybo Z7 FPGA Image Recognition Development
 
 > ### References
-> - https://fumimaker.net/entry/2020/02/06/002934
 > - https://phys-higashi.com/73/#toc8
+> - https://phys-higashi.com/114/#toc12
+> - https://github.com/Digilent/Zybo-Z7-20-pcam-5c
+> - https://fumimaker.net/entry/2020/02/06/002934
 > - https://marsee101.blog.fc2.com/blog-entry-4027.html
 > - https://xilinx.github.io/Vitis-Tutorials/master/docs-jp/docs-jp/Vitis_Platform_Creation/Design_Tutorials/02-Edge-AI-ZCU104/step1.html
 > - https://cellspe.matrix.jp/zerofpga/vivado_xsa.html
-> - https://phys-higashi.com/114/#toc12
 > - https://zenn.dev/gnico/articles/2aef82b7adef44
 
 ### 3.1. Create New Project
