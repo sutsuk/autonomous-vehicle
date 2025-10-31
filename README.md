@@ -124,6 +124,10 @@ wget https://raw.githubusercontent.com/Digilent/digilent-xdc/refs/heads/master/Z
     - Set `Port name` to `ps_gpio_i1`
   - `axi_gpio_0` > `GPIO2 +` >  `gpio2_io_o[31:0]` > `Create Port`
     - Set `Port name` to `ps_gpio_o1`
+  - `BLOCK DESIGN` > `Platform Setup` > `AXI Port` 
+    - Set `Enabled` of `M48`, `M49`, `M50` and `M51`
+  - `BLOCK DESIGN` > `Platform Setup` > `Clock`
+    - Set `Is Default` of `FCLK_CLK0`
   - `Diagram` > `Validate Design`
   - `Flow Navigator` > `IP Integrator` > `Generate Block Design` > `Generate`
   - Confirm `Flow Navigator` > `Project Manager` > `Sources` > `Design Sources` > `Zynq_PS`
