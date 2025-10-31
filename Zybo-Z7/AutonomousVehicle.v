@@ -38,14 +38,14 @@ module AutonomousVehicle
   IBUFG ibuf_clk(.I(sysclk), .O(sysclk_ibuf));
   BUFG buf_clk(.I(sysclk_ibuf), .O(clk));
 
-  wire ps_clko, ps_gpi01, ps_gpi02, ps_gpo01, ps_gpo02, ps_rstno;
+  wire ps_clko, ps_gpio_i0, ps_gpio_o0, ps_gpio_i1, ps_gpio_o1, ps_nrst;
   Zynq_PS Zynq_PS_0 (
     .DDR_addr(DDR_addr), .DDR_ba(DDR_ba), .DDR_cas_n(DDR_cas_n), .DDR_ck_n(DDR_ck_n), .DDR_ck_p(DDR_ck_p), 
     .DDR_dm(DDR_dm), .DDR_dq(DDR_dq), .DDR_dqs_n(DDR_dqs_n), .DDR_dqs_p(DDR_dqs_p), .DDR_odt(DDR_odt),
     .DDR_ras_n(DDR_ras_n), .DDR_reset_n(DDR_reset_n), .DDR_we_n(DDR_we_n), 
     .FIXED_IO_ddr_vrn(FIXED_IO_ddr_vrn), .FIXED_IO_ddr_vrp(FIXED_IO_ddr_vrp),
     .FIXED_IO_mio(FIXED_IO_mio), .FIXED_IO_ps_clk(FIXED_IO_ps_clk), .FIXED_IO_ps_porb(FIXED_IO_ps_porb), .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb)
-    .clko(ps_clko), .gpi01(ps_gpi01), .gpi02(ps_gpi02), .gpo01(ps_gpo01), .gpo02(ps_gpo02), .rstno(ps_rstno)
+    .ps_clk(ps_clk), .ps_gpio_i0(ps_gpio_i0), .ps_gpio_i1(ps_gpio_i1), .ps_gpio_o0(ps_gpio_o0), .ps_gpio_o1(ps_gpio_o1), .ps_nrst(ps_nrst)
   );
 
   reg [31:0] ps_counter;
