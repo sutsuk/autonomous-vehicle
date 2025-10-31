@@ -1,5 +1,3 @@
-`default_nettype none
-
 module AutonomousVehicle
   (
     input  sysclk,
@@ -69,5 +67,3 @@ module AutonomousVehicle
 
   assign led = ps_gpo01;
 endmodule
-
-`default_nettype wire
