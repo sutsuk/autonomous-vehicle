@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Fri Oct 31 16:44:11 2025
+# Process ID         : 10176
+# Current directory  : C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.runs/Zynq_PS_rst_ps7_0_100M_0_synth_1
+# Command line       : vivado.exe -log Zynq_PS_rst_ps7_0_100M_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Zynq_PS_rst_ps7_0_100M_0.tcl
+# Log file           : C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.runs/Zynq_PS_rst_ps7_0_100M_0_synth_1/Zynq_PS_rst_ps7_0_100M_0.vds
+# Journal file       : C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.runs/Zynq_PS_rst_ps7_0_100M_0_synth_1\vivado.jou
+# Running On         : Lavie03
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i7-1355U
+# CPU Frequency      : 2611 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 12
+# Host memory        : 16874 MB
+# Swap memory        : 7247 MB
+# Total Virtual      : 24122 MB
+# Available Virtual  : 13262 MB
+#-----------------------------------------------------------
+source Zynq_PS_rst_ps7_0_100M_0.tcl -notrace

@@ -1,0 +1,1027 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Fri Oct 31 17:33:10 2025
+# Process ID         : 952
+# Current directory  : C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.runs/impl_1
+# Command line       : vivado.exe -log AutonomousVehicle.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source AutonomousVehicle.tcl -notrace
+# Log file           : C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.runs/impl_1/AutonomousVehicle.vdi
+# Journal file       : C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.runs/impl_1\vivado.jou
+# Running On         : Lavie03
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i7-1355U
+# CPU Frequency      : 2611 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 12
+# Host memory        : 16874 MB
+# Swap memory        : 7247 MB
+# Total Virtual      : 24122 MB
+# Available Virtual  : 12703 MB
+#-----------------------------------------------------------
+source AutonomousVehicle.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/ProgramFiles/Xilinx/2025.1/Vivado/data/ip'.
+Command: link_design -top AutonomousVehicle -part xc7z020clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-5699] Read binary netlist with skipMacroContent - 1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_axi_gpio_0_0/Zynq_PS_axi_gpio_0_0.dcp' for cell 'Zynq_PS_0/axi_gpio_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_axi_smc_0/Zynq_PS_axi_smc_0.dcp' for cell 'Zynq_PS_0/axi_smc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.dcp' for cell 'Zynq_PS_0/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_rst_ps7_0_100M_0/Zynq_PS_rst_ps7_0_100M_0.dcp' for cell 'Zynq_PS_0/rst_ps7_0_100M'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.085 . Memory (MB): peak = 924.141 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 11 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2025.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc] for cell 'Zynq_PS_0/processing_system7_0/inst'
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'iostandard', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:30]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:31]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'slew', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:32]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'drive', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:33]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'pullup', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:34]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PIO_DIRECTION', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:35]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'iostandard', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:37]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:38]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'slew', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:39]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'drive', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:40]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'pullup', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:41]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PIO_DIRECTION', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:42]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'iostandard', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:44]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:45]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'slew', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:46]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'drive', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:47]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PIO_DIRECTION', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:48]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'iostandard', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:50]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:51]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'slew', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:52]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'drive', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:53]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PIO_DIRECTION', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:54]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'iostandard', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:56]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:57]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'slew', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:58]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'drive', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:59]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'pullup', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:60]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PIO_DIRECTION', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:61]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'iostandard', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:63]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:64]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'slew', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:65]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'drive', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:66]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'pullup', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:67]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PIO_DIRECTION', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:68]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'iostandard', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:70]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:71]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'slew', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:72]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'drive', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:73]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'pullup', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:74]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PIO_DIRECTION', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:75]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'iostandard', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:77]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:78]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'slew', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:79]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'drive', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:80]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'pullup', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:81]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PIO_DIRECTION', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:82]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'iostandard', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:84]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:85]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'slew', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:86]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'drive', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:87]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'pullup', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:88]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PIO_DIRECTION', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:89]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'iostandard', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:91]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:92]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'slew', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:93]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'drive', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:94]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'pullup', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:95]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PIO_DIRECTION', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:96]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'iostandard', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:98]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:99]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'slew', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:100]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'drive', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:101]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'pullup', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:102]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PIO_DIRECTION', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:103]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'iostandard', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:105]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:106]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'slew', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:107]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'drive', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:108]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'pullup', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:109]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PIO_DIRECTION', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:110]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'iostandard', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:112]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:113]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'slew', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:114]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'drive', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:115]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'pullup', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:116]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PIO_DIRECTION', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:117]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'iostandard', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:119]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:120]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'slew', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:121]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'drive', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:122]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'pullup', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:123]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PIO_DIRECTION', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:124]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'iostandard', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:126]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:127]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'slew', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:128]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'drive', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:129]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'pullup', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:130]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PIO_DIRECTION', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:131]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'iostandard', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:133]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:134]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'slew', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:135]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'drive', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:136]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'pullup', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:137]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PIO_DIRECTION', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:138]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'iostandard', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:140]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:141]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'slew', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:142]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'drive', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:143]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'pullup', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:144]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PIO_DIRECTION', because the property does not exist for objects of type 'pin'. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:145]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+INFO: [Common 17-14] Message 'Netlist 29-160' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc:145]
+Finished Parsing XDC File [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0.xdc] for cell 'Zynq_PS_0/processing_system7_0/inst'
+Parsing XDC File [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_axi_gpio_0_0/Zynq_PS_axi_gpio_0_0_board.xdc] for cell 'Zynq_PS_0/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_axi_gpio_0_0/Zynq_PS_axi_gpio_0_0_board.xdc] for cell 'Zynq_PS_0/axi_gpio_0/U0'
+Parsing XDC File [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_axi_smc_0/bd_0/ip/ip_1/bd_d3c9_psr_aclk_0_board.xdc] for cell 'Zynq_PS_0/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_axi_smc_0/bd_0/ip/ip_1/bd_d3c9_psr_aclk_0_board.xdc] for cell 'Zynq_PS_0/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_axi_smc_0/smartconnect.xdc] for cell 'Zynq_PS_0/axi_smc/inst'
+Finished Parsing XDC File [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_axi_smc_0/smartconnect.xdc] for cell 'Zynq_PS_0/axi_smc/inst'
+Parsing XDC File [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_rst_ps7_0_100M_0/Zynq_PS_rst_ps7_0_100M_0_board.xdc] for cell 'Zynq_PS_0/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_rst_ps7_0_100M_0/Zynq_PS_rst_ps7_0_100M_0_board.xdc] for cell 'Zynq_PS_0/rst_ps7_0_100M/U0'
+Parsing XDC File [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc]
+WARNING: [Vivado 12-584] No ports matched 'led4_r'. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led4_g'. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led4_b'. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led5_r'. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led5_g'. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led5_b'. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dphy_clk_lp_n'. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:139]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:139]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dphy_clk_lp_p'. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:140]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:140]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dphy_data_lp_n[0]'. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:142]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:142]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dphy_data_lp_p[0]'. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:143]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:143]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dphy_data_lp_n[1]'. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:144]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:144]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dphy_data_lp_p[1]'. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:145]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:145]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dphy_hs_clock_clk_n'. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:147]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:147]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dphy_hs_clock_clk_p'. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:148]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:148]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dphy_hs_clock_clk_p'. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:151]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports dphy_hs_clock_clk_p]'. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:151]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'dphy_data_hs_n[0]'. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:153]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:153]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dphy_data_hs_p[0]'. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:154]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:154]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dphy_data_hs_n[1]'. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:155]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:155]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dphy_data_hs_p[1]'. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:156]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:156]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cam_clk'. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:158]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:158]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cam_gpio'. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:159]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:159]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cam_scl'. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:160]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:160]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cam_sda'. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:161]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:161]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc]
+INFO: [Project 1-1714] 20 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1642.289 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+17 Infos, 23 Warnings, 123 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1642.289 ; gain = 982.121
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.905 . Memory (MB): peak = 1642.289 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 22bb346e2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.116 . Memory (MB): peak = 1642.289 ; gain = 0.000
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 22bb346e2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2066.375 ; gain = 0.000
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 22bb346e2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 2066.375 ; gain = 0.000
+Phase 1 Initialization | Checksum: 22bb346e2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 2066.375 ; gain = 0.000
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Timer Update
+Phase 2.1 Timer Update | Checksum: 22bb346e2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 2066.375 ; gain = 0.000
+
+Phase 2.2 Timing Data Collection
+Phase 2.2 Timing Data Collection | Checksum: 22bb346e2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 2066.375 ; gain = 0.000
+Phase 2 Timer Update And Timing Data Collection | Checksum: 22bb346e2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 2066.375 ; gain = 0.000
+
+Phase 3 Retarget
+INFO: [Opt 31-1851] Number of loadless carry chains removed were: 0
+INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
+INFO: [Opt 31-138] Pushed 10 inverter(s) to 38 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 17181ab64
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.110 . Memory (MB): peak = 2066.375 ; gain = 0.000
+Retarget | Checksum: 17181ab64
+INFO: [Opt 31-389] Phase Retarget created 8 cells and removed 43 cells
+INFO: [Opt 31-1021] In phase Retarget, 20 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 2 load pin(s).
+Phase 4 Constant propagation | Checksum: 2261d25d1
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.136 . Memory (MB): peak = 2066.375 ; gain = 0.000
+Constant propagation | Checksum: 2261d25d1
+INFO: [Opt 31-389] Phase Constant propagation created 45 cells and removed 84 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 20 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 Sweep
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2066.375 ; gain = 0.000
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2066.375 ; gain = 0.000
+Phase 5 Sweep | Checksum: 171914884
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.355 . Memory (MB): peak = 2066.375 ; gain = 0.000
+Sweep | Checksum: 171914884
+INFO: [Opt 31-389] Phase Sweep created 4 cells and removed 93 cells
+INFO: [Opt 31-1021] In phase Sweep, 25 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 6 BUFG optimization
+Phase 6 BUFG optimization | Checksum: 171914884
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.378 . Memory (MB): peak = 2066.375 ; gain = 0.000
+BUFG optimization | Checksum: 171914884
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 171914884
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.385 . Memory (MB): peak = 2066.375 ; gain = 0.000
+Shift Register Optimization | Checksum: 171914884
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 1a0f7db97
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.397 . Memory (MB): peak = 2066.375 ; gain = 0.000
+Post Processing Netlist | Checksum: 1a0f7db97
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 20 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 1beafa600
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.456 . Memory (MB): peak = 2066.375 ; gain = 0.000
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2066.375 ; gain = 0.000
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 1beafa600
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.466 . Memory (MB): peak = 2066.375 ; gain = 0.000
+Phase 9 Finalization | Checksum: 1beafa600
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.469 . Memory (MB): peak = 2066.375 ; gain = 0.000
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               8  |              43  |                                             20  |
+|  Constant propagation         |              45  |              84  |                                             20  |
+|  Sweep                        |               4  |              93  |                                             25  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                             20  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 1beafa600
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.472 . Memory (MB): peak = 2066.375 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 1beafa600
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2066.375 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 1beafa600
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2066.375 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2066.375 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 1beafa600
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2066.375 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+42 Infos, 23 Warnings, 123 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+INFO: [Vivado 12-24828] Executing command : report_drc -file AutonomousVehicle_drc_opted.rpt -pb AutonomousVehicle_drc_opted.pb -rpx AutonomousVehicle_drc_opted.rpx
+Command: report_drc -file AutonomousVehicle_drc_opted.rpt -pb AutonomousVehicle_drc_opted.pb -rpx AutonomousVehicle_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.runs/impl_1/AutonomousVehicle_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2066.375 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 2066.375 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2066.375 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 2066.375 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2066.375 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 2066.375 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.079 . Memory (MB): peak = 2066.375 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.runs/impl_1/AutonomousVehicle_opt.dcp' has been generated.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2066.375 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: d81dc8e3
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2066.375 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2066.375 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 16a293a97
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.305 . Memory (MB): peak = 2072.645 ; gain = 6.270
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: d3bafa56
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.547 . Memory (MB): peak = 2072.645 ; gain = 6.270
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: d3bafa56
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.553 . Memory (MB): peak = 2072.645 ; gain = 6.270
+Phase 1 Placer Initialization | Checksum: d3bafa56
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.561 . Memory (MB): peak = 2072.645 ; gain = 6.270
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: aceea53e
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.639 . Memory (MB): peak = 2072.645 ; gain = 6.270
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 1491356ef
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.703 . Memory (MB): peak = 2072.645 ; gain = 6.270
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 1491356ef
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.709 . Memory (MB): peak = 2072.645 ; gain = 6.270
+
+Phase 2.4 Global Place Phase1
+Phase 2.4 Global Place Phase1 | Checksum: 830858e9
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 2072.645 ; gain = 6.270
+
+Phase 2.5 Global Place Phase2
+
+Phase 2.5.1 UpdateTiming Before Physical Synthesis
+Phase 2.5.1 UpdateTiming Before Physical Synthesis | Checksum: 830858e9
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2072.645 ; gain = 6.270
+
+Phase 2.5.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 57 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 23 nets or LUTs. Breaked 0 LUT, combined 23 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register to Pipeline Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  URAM Register Optimization was not performed.
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2072.645 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            0  |             23  |                    23  |           0  |           1  |  00:00:00  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            0  |             23  |                    23  |           0  |           4  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.5.2 Physical Synthesis In Placer | Checksum: fe9e1df1
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2072.645 ; gain = 6.270
+Phase 2.5 Global Place Phase2 | Checksum: 9ac5d92b
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2072.645 ; gain = 6.270
+Phase 2 Global Placement | Checksum: 9ac5d92b
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2072.645 ; gain = 6.270
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 115983fee
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 2072.645 ; gain = 6.270
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 69e5aa9e
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 2072.645 ; gain = 6.270
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1042960f6
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 2072.645 ; gain = 6.270
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 5e13baf9
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 2072.645 ; gain = 6.270
+
+Phase 3.5 Small Shape Detail Placement
+Phase 3.5 Small Shape Detail Placement | Checksum: d78281f7
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2072.645 ; gain = 6.270
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: c1927525
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2072.645 ; gain = 6.270
+
+Phase 3.7 Pipeline Register Optimization
+Phase 3.7 Pipeline Register Optimization | Checksum: abb01f64
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2072.645 ; gain = 6.270
+Phase 3 Detail Placement | Checksum: abb01f64
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2072.645 ; gain = 6.270
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 182cdfbd4
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=1.907 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: 24be1fbfb
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 2102.578 ; gain = 0.000
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
+Ending Physical Synthesis Task | Checksum: 1c112d041
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 2102.578 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 182cdfbd4
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 2102.578 ; gain = 36.203
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=1.907. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: faf65720
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 2102.578 ; gain = 36.203
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 2102.578 ; gain = 36.203
+Phase 4.1 Post Commit Optimization | Checksum: faf65720
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 2102.578 ; gain = 36.203
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: faf65720
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 2102.578 ; gain = 36.203
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                1x1|                1x1|
+|___________|___________________|___________________|
+|      South|                1x1|                1x1|
+|___________|___________________|___________________|
+|       East|                1x1|                1x1|
+|___________|___________________|___________________|
+|       West|                1x1|                1x1|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: faf65720
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 2102.578 ; gain = 36.203
+Phase 4.3 Placer Reporting | Checksum: faf65720
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 2102.578 ; gain = 36.203
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2102.578 ; gain = 0.000
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 2102.578 ; gain = 36.203
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: b01c6d56
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 2102.578 ; gain = 36.203
+Ending Placer Task | Checksum: 8fa7095a
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 2102.578 ; gain = 36.203
+77 Infos, 23 Warnings, 123 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+INFO: [Vivado 12-24838] Running report commands "report_control_sets, report_io, report_utilization" in parallel.
+Running report generation with 2 threads.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file AutonomousVehicle_utilization_placed.rpt -pb AutonomousVehicle_utilization_placed.pb
+INFO: [Vivado 12-24828] Executing command : report_control_sets -verbose -file AutonomousVehicle_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2102.578 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_io -file AutonomousVehicle_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.071 . Memory (MB): peak = 2102.578 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 2111.734 ; gain = 8.891
+Wrote PlaceDB: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.158 . Memory (MB): peak = 2119.184 ; gain = 7.449
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2119.184 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 2119.184 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2119.184 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2119.184 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.198 . Memory (MB): peak = 2119.184 ; gain = 7.449
+INFO: [Common 17-1381] The checkpoint 'C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.runs/impl_1/AutonomousVehicle_placed.dcp' has been generated.
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.113 . Memory (MB): peak = 2119.184 ; gain = 0.000
+INFO: [Vivado_Tcl 4-2279] Estimated Timing Summary | WNS= 1.907 | TNS= 0.000 | 
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. All physical synthesis setup optimizations will be skipped.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+88 Infos, 23 Warnings, 123 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2137.996 ; gain = 8.918
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.087 . Memory (MB): peak = 2145.457 ; gain = 16.379
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2145.457 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 2145.457 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2145.457 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.015 . Memory (MB): peak = 2145.457 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.138 . Memory (MB): peak = 2145.457 ; gain = 16.379
+INFO: [Common 17-1381] The checkpoint 'C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.runs/impl_1/AutonomousVehicle_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 7846a06 ConstDB: 0 ShapeSum: 72292c64 RouteDB: 15f972f0
+Post Restoration Checksum: NetGraph: 4012f423 | NumContArr: 4dbaef4e | Constraints: c2a8fa9d | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 2131fd8ab
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 2224.559 ; gain = 79.102
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 2131fd8ab
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 2224.559 ; gain = 79.102
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 2131fd8ab
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 2224.559 ; gain = 79.102
+ Number of Nodes with overlaps = 0
+
+Phase 2.3 Update Timing
+Phase 2.3 Update Timing | Checksum: 2876f5d9a
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:20 . Memory (MB): peak = 2261.473 ; gain = 116.016
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.936  | TNS=0.000  | WHS=-0.166 | THS=-34.457|
+
+
+Phase 2.4 Soft Constraint Pins - Fast Budgeting
+Phase 2.4 Soft Constraint Pins - Fast Budgeting | Checksum: 2a1d4139c
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:20 . Memory (MB): peak = 2285.520 ; gain = 140.062
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 1955
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 1955
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 287cdc46b
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:21 . Memory (MB): peak = 2285.520 ; gain = 140.062
+
+Phase 3 Global Routing
+Phase 3 Global Routing | Checksum: 287cdc46b
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:21 . Memory (MB): peak = 2285.520 ; gain = 140.062
+
+Phase 4 Initial Routing
+
+Phase 4.1 Initial Net Routing Pass
+Phase 4.1 Initial Net Routing Pass | Checksum: 2c1015c65
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 2285.520 ; gain = 140.062
+Phase 4 Initial Routing | Checksum: 2c1015c65
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 2285.520 ; gain = 140.062
+
+Phase 5 Rip-up And Reroute
+
+Phase 5.1 Global Iteration 0
+ Number of Nodes with overlaps = 124
+ Number of Nodes with overlaps = 15
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.101  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Global Iteration 0 | Checksum: 2b198ec33
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 2285.520 ; gain = 140.062
+
+Phase 5.2 Global Iteration 1
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.203  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.2 Global Iteration 1 | Checksum: 2468559d3
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 2285.520 ; gain = 140.062
+Phase 5 Rip-up And Reroute | Checksum: 2468559d3
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 2285.520 ; gain = 140.062
+
+Phase 6 Delay and Skew Optimization
+
+Phase 6.1 Delay CleanUp
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1fad72b78
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 2285.520 ; gain = 140.062
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.318  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 6.1 Delay CleanUp | Checksum: 1fad72b78
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 2285.520 ; gain = 140.062
+
+Phase 6.2 Clock Skew Optimization
+Phase 6.2 Clock Skew Optimization | Checksum: 1fad72b78
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 2285.520 ; gain = 140.062
+Phase 6 Delay and Skew Optimization | Checksum: 1fad72b78
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 2285.520 ; gain = 140.062
+
+Phase 7 Post Hold Fix
+
+Phase 7.1 Hold Fix Iter
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.318  | TNS=0.000  | WHS=0.059  | THS=0.000  |
+
+Phase 7.1 Hold Fix Iter | Checksum: 2019240e7
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 2285.520 ; gain = 140.062
+Phase 7 Post Hold Fix | Checksum: 2019240e7
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 2285.520 ; gain = 140.062
+
+Phase 8 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.24547 %
+  Global Horizontal Routing Utilization  = 0.267495 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 8 Route finalize | Checksum: 2019240e7
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 2285.520 ; gain = 140.062
+
+Phase 9 Verifying routed nets
+
+ Verification completed successfully
+Phase 9 Verifying routed nets | Checksum: 2019240e7
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 2285.520 ; gain = 140.062
+
+Phase 10 Depositing Routes
+Phase 10 Depositing Routes | Checksum: 1bfaebbbb
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 2285.520 ; gain = 140.062
+
+Phase 11 Post Process Routing
+Phase 11 Post Process Routing | Checksum: 1bfaebbbb
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 2285.520 ; gain = 140.062
+
+Phase 12 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=2.318  | TNS=0.000  | WHS=0.059  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 12 Post Router Timing | Checksum: 1bfaebbbb
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 2285.520 ; gain = 140.062
+Total Elapsed time in route_design: 21.424 secs
+
+Phase 13 Post-Route Event Processing
+Phase 13 Post-Route Event Processing | Checksum: 16a3167aa
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 2285.520 ; gain = 140.062
+INFO: [Route 35-16] Router Completed Successfully
+Ending Routing Task | Checksum: 16a3167aa
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 2285.520 ; gain = 140.062
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+101 Infos, 23 Warnings, 123 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:21 . Memory (MB): peak = 2285.520 ; gain = 140.062
+INFO: [Vivado 12-24828] Executing command : report_drc -file AutonomousVehicle_drc_routed.rpt -pb AutonomousVehicle_drc_routed.pb -rpx AutonomousVehicle_drc_routed.rpx
+Command: report_drc -file AutonomousVehicle_drc_routed.rpt -pb AutonomousVehicle_drc_routed.pb -rpx AutonomousVehicle_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.runs/impl_1/AutonomousVehicle_drc_routed.rpt.
+report_drc completed successfully
+INFO: [Vivado 12-24828] Executing command : report_methodology -file AutonomousVehicle_methodology_drc_routed.rpt -pb AutonomousVehicle_methodology_drc_routed.pb -rpx AutonomousVehicle_methodology_drc_routed.rpx
+Command: report_methodology -file AutonomousVehicle_methodology_drc_routed.rpt -pb AutonomousVehicle_methodology_drc_routed.pb -rpx AutonomousVehicle_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.runs/impl_1/AutonomousVehicle_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [Vivado 12-24828] Executing command : report_timing_summary -max_paths 10 -routable_nets -report_unconstrained -file AutonomousVehicle_timing_summary_routed.rpt -pb AutonomousVehicle_timing_summary_routed.pb -rpx AutonomousVehicle_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Vivado 12-24838] Running report commands "report_incremental_reuse, report_route_status" in parallel.
+Running report generation with 2 threads.
+INFO: [Vivado 12-24828] Executing command : report_incremental_reuse -file AutonomousVehicle_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [Vivado 12-24828] Executing command : report_route_status -file AutonomousVehicle_route_status.rpt -pb AutonomousVehicle_route_status.pb
+INFO: [Vivado 12-24828] Executing command : report_power -file AutonomousVehicle_power_routed.rpt -pb AutonomousVehicle_power_summary_routed.pb -rpx AutonomousVehicle_power_routed.rpx
+Command: report_power -file AutonomousVehicle_power_routed.rpt -pb AutonomousVehicle_power_summary_routed.pb -rpx AutonomousVehicle_power_routed.rpx
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+118 Infos, 23 Warnings, 123 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [Vivado 12-24828] Executing command : report_clock_utilization -file AutonomousVehicle_clock_utilization_routed.rpt
+INFO: [Vivado 12-24828] Executing command : report_bus_skew -warn_on_violation -file AutonomousVehicle_bus_skew_routed.rpt -pb AutonomousVehicle_bus_skew_routed.pb -rpx AutonomousVehicle_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+generate_parallel_reports: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 2329.836 ; gain = 44.316
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2330.820 ; gain = 0.984
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.112 . Memory (MB): peak = 2338.957 ; gain = 8.137
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2338.957 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.046 . Memory (MB): peak = 2338.957 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2338.957 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 2338.957 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.184 . Memory (MB): peak = 2338.957 ; gain = 8.137
+INFO: [Common 17-1381] The checkpoint 'C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.runs/impl_1/AutonomousVehicle_routed.dcp' has been generated.
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 31 17:34:14 2025...

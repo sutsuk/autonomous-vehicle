@@ -1,0 +1,385 @@
+
+*** Running vivado
+    with args -log AutonomousVehicle.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source AutonomousVehicle.tcl
+
+
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Fri Oct 31 17:36:21 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source AutonomousVehicle.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/ProgramFiles/Xilinx/2025.1/Vivado/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.srcs/utils_1/imports/synth_1/AutonomousVehicle.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.srcs/utils_1/imports/synth_1/AutonomousVehicle.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top AutonomousVehicle -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 4692
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1364.332 ; gain = 493.965
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'ps_clk', assumed default net type 'wire' [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.v:48]
+INFO: [Synth 8-6157] synthesizing module 'AutonomousVehicle' [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.v:1]
+INFO: [Synth 8-6157] synthesizing module 'IBUFG' [C:/ProgramFiles/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:77352]
+INFO: [Synth 8-6155] done synthesizing module 'IBUFG' (0#1) [C:/ProgramFiles/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:77352]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/ProgramFiles/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:2678]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [C:/ProgramFiles/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:2678]
+INFO: [Synth 8-6157] synthesizing module 'Zynq_PS' [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/synth/Zynq_PS.v:13]
+INFO: [Synth 8-6157] synthesizing module 'Zynq_PS_axi_gpio_0_0' [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.runs/synth_1/.Xil/Vivado-13084-Lavie03/realtime/Zynq_PS_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Zynq_PS_axi_gpio_0_0' (0#1) [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.runs/synth_1/.Xil/Vivado-13084-Lavie03/realtime/Zynq_PS_axi_gpio_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'gpio_io_t' of module 'Zynq_PS_axi_gpio_0_0' is unconnected for instance 'axi_gpio_0' [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/synth/Zynq_PS.v:154]
+WARNING: [Synth 8-7071] port 'gpio2_io_t' of module 'Zynq_PS_axi_gpio_0_0' is unconnected for instance 'axi_gpio_0' [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/synth/Zynq_PS.v:154]
+WARNING: [Synth 8-7023] instance 'axi_gpio_0' of module 'Zynq_PS_axi_gpio_0_0' has 25 connections declared, but only 23 given [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/synth/Zynq_PS.v:154]
+INFO: [Synth 8-6157] synthesizing module 'Zynq_PS_axi_smc_0' [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.runs/synth_1/.Xil/Vivado-13084-Lavie03/realtime/Zynq_PS_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Zynq_PS_axi_smc_0' (0#1) [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.runs/synth_1/.Xil/Vivado-13084-Lavie03/realtime/Zynq_PS_axi_smc_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'M00_AXI_awprot' of module 'Zynq_PS_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/synth/Zynq_PS.v:178]
+WARNING: [Synth 8-7071] port 'M00_AXI_arprot' of module 'Zynq_PS_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/synth/Zynq_PS.v:178]
+WARNING: [Synth 8-7023] instance 'axi_smc' of module 'Zynq_PS_axi_smc_0' has 59 connections declared, but only 57 given [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/synth/Zynq_PS.v:178]
+INFO: [Synth 8-6157] synthesizing module 'Zynq_PS_processing_system7_0_0' [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.runs/synth_1/.Xil/Vivado-13084-Lavie03/realtime/Zynq_PS_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Zynq_PS_processing_system7_0_0' (0#1) [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.runs/synth_1/.Xil/Vivado-13084-Lavie03/realtime/Zynq_PS_processing_system7_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'USB0_PORT_INDCTL' of module 'Zynq_PS_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/synth/Zynq_PS.v:236]
+WARNING: [Synth 8-7071] port 'USB0_VBUS_PWRSELECT' of module 'Zynq_PS_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/synth/Zynq_PS.v:236]
+WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'Zynq_PS_processing_system7_0_0' has 65 connections declared, but only 63 given [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/synth/Zynq_PS.v:236]
+INFO: [Synth 8-6157] synthesizing module 'Zynq_PS_rst_ps7_0_100M_0' [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.runs/synth_1/.Xil/Vivado-13084-Lavie03/realtime/Zynq_PS_rst_ps7_0_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Zynq_PS_rst_ps7_0_100M_0' (0#1) [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.runs/synth_1/.Xil/Vivado-13084-Lavie03/realtime/Zynq_PS_rst_ps7_0_100M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'Zynq_PS_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/synth/Zynq_PS.v:300]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'Zynq_PS_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/synth/Zynq_PS.v:300]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'Zynq_PS_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/synth/Zynq_PS.v:300]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'Zynq_PS_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/synth/Zynq_PS.v:300]
+WARNING: [Synth 8-7023] instance 'rst_ps7_0_100M' of module 'Zynq_PS_rst_ps7_0_100M_0' has 10 connections declared, but only 6 given [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/synth/Zynq_PS.v:300]
+INFO: [Synth 8-6155] done synthesizing module 'Zynq_PS' (0#1) [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/synth/Zynq_PS.v:13]
+WARNING: [Synth 8-689] width (1) of port connection 'FIXED_IO_mio' does not match port width (54) of module 'Zynq_PS' [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.v:47]
+WARNING: [Synth 8-7071] port 'DDR_cke' of module 'Zynq_PS' is unconnected for instance 'Zynq_PS_0' [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.v:42]
+WARNING: [Synth 8-7071] port 'DDR_cs_n' of module 'Zynq_PS' is unconnected for instance 'Zynq_PS_0' [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.v:42]
+WARNING: [Synth 8-7023] instance 'Zynq_PS_0' of module 'Zynq_PS' has 27 connections declared, but only 25 given [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'AutonomousVehicle' (0#1) [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.v:1]
+WARNING: [Synth 8-3848] Net ps_clko in module/entity AutonomousVehicle does not have driver. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.v:39]
+WARNING: [Synth 8-7129] Port ja[7] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ja[6] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ja[5] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ja[4] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ja[3] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ja[2] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ja[1] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ja[0] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jb[7] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jb[6] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jb[5] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jb[4] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jb[3] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jb[2] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jb[1] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jb[0] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jc[7] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jc[6] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jc[5] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jc[4] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jc[3] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jc[2] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jc[1] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jc[0] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jd[7] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jd[6] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jd[5] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jd[4] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jd[3] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jd[2] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jd[1] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jd[0] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port je[7] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port je[6] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port je[5] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port je[4] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port je[3] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port je[2] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port je[1] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port je[0] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DDR_cke in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DDR_cs_n in module AutonomousVehicle is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1477.512 ; gain = 607.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1477.512 ; gain = 607.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1477.512 ; gain = 607.145
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1477.512 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+WARNING: [Netlist 29-432] The IBUFG primitive 'ibuf_clk' has been retargeted to an IBUF primitive only. No BUFG will be added. If a global buffer is intended, please instantiate an available global clock primitive from the current architecture.
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0_in_context.xdc] for cell 'Zynq_PS_0/processing_system7_0'
+Finished Parsing XDC File [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0/Zynq_PS_processing_system7_0_0_in_context.xdc] for cell 'Zynq_PS_0/processing_system7_0'
+Parsing XDC File [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_axi_gpio_0_0/Zynq_PS_axi_gpio_0_0/Zynq_PS_axi_gpio_0_0_in_context.xdc] for cell 'Zynq_PS_0/axi_gpio_0'
+Finished Parsing XDC File [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_axi_gpio_0_0/Zynq_PS_axi_gpio_0_0/Zynq_PS_axi_gpio_0_0_in_context.xdc] for cell 'Zynq_PS_0/axi_gpio_0'
+Parsing XDC File [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_axi_smc_0/Zynq_PS_axi_smc_0/Zynq_PS_axi_smc_0_in_context.xdc] for cell 'Zynq_PS_0/axi_smc'
+Finished Parsing XDC File [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_axi_smc_0/Zynq_PS_axi_smc_0/Zynq_PS_axi_smc_0_in_context.xdc] for cell 'Zynq_PS_0/axi_smc'
+Parsing XDC File [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_rst_ps7_0_100M_0/Zynq_PS_rst_ps7_0_100M_0/Zynq_PS_rst_ps7_0_100M_0_in_context.xdc] for cell 'Zynq_PS_0/rst_ps7_0_100M'
+Finished Parsing XDC File [c:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ip/Zynq_PS_rst_ps7_0_100M_0/Zynq_PS_rst_ps7_0_100M_0/Zynq_PS_rst_ps7_0_100M_0_in_context.xdc] for cell 'Zynq_PS_0/rst_ps7_0_100M'
+Parsing XDC File [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc]
+WARNING: [Vivado 12-584] No ports matched 'led4_r'. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'led4_g'. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:28]
+WARNING: [Vivado 12-584] No ports matched 'led4_b'. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'led5_r'. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'led5_g'. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:31]
+WARNING: [Vivado 12-584] No ports matched 'led5_b'. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'dphy_clk_lp_n'. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:139]
+WARNING: [Vivado 12-584] No ports matched 'dphy_clk_lp_p'. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:140]
+WARNING: [Vivado 12-584] No ports matched 'dphy_data_lp_n[0]'. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:142]
+WARNING: [Vivado 12-584] No ports matched 'dphy_data_lp_p[0]'. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:143]
+WARNING: [Vivado 12-584] No ports matched 'dphy_data_lp_n[1]'. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:144]
+WARNING: [Vivado 12-584] No ports matched 'dphy_data_lp_p[1]'. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:145]
+WARNING: [Vivado 12-584] No ports matched 'dphy_hs_clock_clk_n'. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:147]
+WARNING: [Vivado 12-584] No ports matched 'dphy_hs_clock_clk_p'. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:148]
+WARNING: [Vivado 12-584] No ports matched 'dphy_hs_clock_clk_p'. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:151]
+WARNING: [Vivado 12-584] No ports matched 'dphy_data_hs_n[0]'. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:153]
+WARNING: [Vivado 12-584] No ports matched 'dphy_data_hs_p[0]'. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:154]
+WARNING: [Vivado 12-584] No ports matched 'dphy_data_hs_n[1]'. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:155]
+WARNING: [Vivado 12-584] No ports matched 'dphy_data_hs_p[1]'. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:156]
+WARNING: [Vivado 12-584] No ports matched 'cam_clk'. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:158]
+WARNING: [Vivado 12-584] No ports matched 'cam_gpio'. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:159]
+WARNING: [Vivado 12-584] No ports matched 'cam_scl'. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:160]
+WARNING: [Vivado 12-584] No ports matched 'cam_sda'. [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc:161]
+Finished Parsing XDC File [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/AutonomousVehicle_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/AutonomousVehicle_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/AutonomousVehicle_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1552.273 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IBUFG => IBUF: 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1552.273 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1552.273 ; gain = 681.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1552.273 ; gain = 681.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1552.273 ; gain = 681.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1552.273 ; gain = 681.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port ja[7] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ja[6] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ja[5] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ja[4] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ja[3] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ja[2] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ja[1] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ja[0] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jb[7] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jb[6] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jb[5] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jb[4] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jb[3] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jb[2] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jb[1] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jb[0] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jc[7] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jc[6] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jc[5] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jc[4] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jc[3] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jc[2] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jc[1] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jc[0] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jd[7] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jd[6] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jd[5] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jd[4] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jd[3] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jd[2] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jd[1] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jd[0] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port je[7] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port je[6] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port je[5] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port je[4] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port je[3] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port je[2] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port je[1] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port je[0] in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DDR_cke in module AutonomousVehicle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DDR_cs_n in module AutonomousVehicle is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1552.273 ; gain = 681.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1691.816 ; gain = 821.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1692.039 ; gain = 821.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1701.977 ; gain = 831.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1936.844 ; gain = 1066.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1936.844 ; gain = 1066.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1936.844 ; gain = 1066.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1936.844 ; gain = 1066.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1936.844 ; gain = 1066.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1936.844 ; gain = 1066.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-------------------------------+----------+
+|      |BlackBox name                  |Instances |
++------+-------------------------------+----------+
+|1     |Zynq_PS_axi_gpio_0_0           |         1|
+|2     |Zynq_PS_axi_smc_0              |         1|
+|3     |Zynq_PS_processing_system7_0_0 |         1|
+|4     |Zynq_PS_rst_ps7_0_100M_0       |         1|
++------+-------------------------------+----------+
+
+Report Cell Usage: 
++------+-----------------------------+------+
+|      |Cell                         |Count |
++------+-----------------------------+------+
+|1     |Zynq_PS_axi_gpio_0           |     1|
+|2     |Zynq_PS_axi_smc              |     1|
+|3     |Zynq_PS_processing_system7_0 |     1|
+|4     |Zynq_PS_rst_ps7_0_100M       |     1|
+|5     |BUFG                         |     1|
+|6     |IBUFG                        |     1|
+|7     |OBUF                         |     4|
++------+-----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1936.844 ; gain = 1066.477
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 43 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 1936.844 ; gain = 991.715
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1936.844 ; gain = 1066.477
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1936.844 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+WARNING: [Netlist 29-432] The IBUFG primitive 'ibuf_clk' has been retargeted to an IBUF primitive only. No BUFG will be added. If a global buffer is intended, please instantiate an available global clock primitive from the current architecture.
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1949.602 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IBUFG => IBUF: 1 instance 
+
+Synth Design complete | Checksum: 97ae3c8c
+INFO: [Common 17-83] Releasing license: Synthesis
+43 Infos, 130 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 1949.602 ; gain = 1310.578
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1949.602 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/AutonomousVehicle.runs/synth_1/AutonomousVehicle.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file AutonomousVehicle_utilization_synth.rpt -pb AutonomousVehicle_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 31 17:36:57 2025...

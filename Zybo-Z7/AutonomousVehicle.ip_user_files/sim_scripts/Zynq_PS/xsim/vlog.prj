@@ -1,0 +1,26 @@
+verilog xil_defaultlib -i "../../../../../../../../../ProgramFiles/Xilinx/2025.1/Vivado/data/rsb/busdef" --include "C:/ProgramFiles/Xilinx/2025.1/Vivado/data/xilinx_vip/include" --include "../../../../AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ipshared/ec67/hdl" --include "../../../../AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ipshared/6cfa/hdl" --include "../../../../AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ipshared/f0b6/hdl/verilog" --include "../../../../AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ipshared/a8e4/hdl/verilog" \
+"../../../bd/Zynq_PS/ip/Zynq_PS_processing_system7_0_0/sim/Zynq_PS_processing_system7_0_0.v" \
+"../../../bd/Zynq_PS/ip/Zynq_PS_axi_smc_0/bd_0/sim/bd_d3c9.v" \
+"../../../bd/Zynq_PS/ip/Zynq_PS_axi_smc_0/bd_0/ip/ip_0/sim/bd_d3c9_one_0.v" \
+
+sv xil_defaultlib -i "../../../../../../../../../ProgramFiles/Xilinx/2025.1/Vivado/data/rsb/busdef" --include "C:/ProgramFiles/Xilinx/2025.1/Vivado/data/xilinx_vip/include" --include "../../../../AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ipshared/ec67/hdl" --include "../../../../AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ipshared/6cfa/hdl" --include "../../../../AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ipshared/f0b6/hdl/verilog" --include "../../../../AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ipshared/a8e4/hdl/verilog" \
+"../../../bd/Zynq_PS/ip/Zynq_PS_axi_smc_0/bd_0/ip/ip_2/sim/bd_d3c9_s00mmu_0.sv" \
+"../../../bd/Zynq_PS/ip/Zynq_PS_axi_smc_0/bd_0/ip/ip_3/sim/bd_d3c9_s00tr_0.sv" \
+"../../../bd/Zynq_PS/ip/Zynq_PS_axi_smc_0/bd_0/ip/ip_4/sim/bd_d3c9_s00sic_0.sv" \
+"../../../bd/Zynq_PS/ip/Zynq_PS_axi_smc_0/bd_0/ip/ip_5/sim/bd_d3c9_s00a2s_0.sv" \
+"../../../bd/Zynq_PS/ip/Zynq_PS_axi_smc_0/bd_0/ip/ip_6/sim/bd_d3c9_sarn_0.sv" \
+"../../../bd/Zynq_PS/ip/Zynq_PS_axi_smc_0/bd_0/ip/ip_7/sim/bd_d3c9_srn_0.sv" \
+"../../../bd/Zynq_PS/ip/Zynq_PS_axi_smc_0/bd_0/ip/ip_8/sim/bd_d3c9_sawn_0.sv" \
+"../../../bd/Zynq_PS/ip/Zynq_PS_axi_smc_0/bd_0/ip/ip_9/sim/bd_d3c9_swn_0.sv" \
+"../../../bd/Zynq_PS/ip/Zynq_PS_axi_smc_0/bd_0/ip/ip_10/sim/bd_d3c9_sbn_0.sv" \
+"../../../bd/Zynq_PS/ip/Zynq_PS_axi_smc_0/bd_0/ip/ip_11/sim/bd_d3c9_m00s2a_0.sv" \
+"../../../bd/Zynq_PS/ip/Zynq_PS_axi_smc_0/bd_0/ip/ip_12/sim/bd_d3c9_m00e_0.sv" \
+"../../../bd/Zynq_PS/ip/Zynq_PS_axi_smc_0/sim/Zynq_PS_axi_smc_0.sv" \
+
+verilog xil_defaultlib -i "../../../../../../../../../ProgramFiles/Xilinx/2025.1/Vivado/data/rsb/busdef" --include "C:/ProgramFiles/Xilinx/2025.1/Vivado/data/xilinx_vip/include" --include "../../../../AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ipshared/ec67/hdl" --include "../../../../AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ipshared/6cfa/hdl" --include "../../../../AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ipshared/f0b6/hdl/verilog" --include "../../../../AutonomousVehicle.gen/sources_1/bd/Zynq_PS/ipshared/a8e4/hdl/verilog" \
+"../../../bd/Zynq_PS/sim/Zynq_PS.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
