@@ -62,8 +62,8 @@ module AutonomousVehicle
     end
   end
 
-  assign ps_gpi01 = {12'b0, sw_r, 12'b0, btn_r};
-  assign ps_gpi02 = ps_counter;
+  assign ps_gpio_i0 = {12'b0, sw_r, 12'b0, btn_r};
+  assign ps_gpio_i1 = ps_counter;
 
-  assign led = ps_gpo01;
+  assign led = ps_gpio_o0;
 endmodule
