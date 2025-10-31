@@ -140,6 +140,6 @@ wget https://raw.githubusercontent.com/Digilent/digilent-xdc/refs/heads/master/Z
 - `Flow Navigator` > `Program and Debug` > `Generate Bitstream`
 
 ### 3.7. Export Hardware
-- `File` > `Export` > `Export Hardware` > `Include bitstream/binary`
+- `File` > `Export` > `Export platform` > `Hardware` > `Include bitstream/binary`
   - Select `Include bitstream`
   - XSA file name: `system`
