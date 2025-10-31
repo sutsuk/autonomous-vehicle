@@ -51,7 +51,7 @@ module AutonomousVehicle
   reg [31:0] ps_counter;
   reg [3:0] sw_r, btn_r;
   always @(posedge ps_clko) begin
-    if (!ps_rstno) begin
+    if (!ps_nrst) begin
       ps_counter <= 0;
     end else begin
       ps_counter <= ps_counter + 1;
