@@ -100,20 +100,44 @@ wget https://raw.githubusercontent.com/Digilent/digilent-xdc/refs/heads/master/Z
  
 <div align="center"><img src="imgs/run-block-automation.jpg" width="500"></div>
 
-  - Connect `M_AXI_GP0_ACLK` and `FCLK_CLK0`
+  - Right click Processing System Block > Customize Block
+    -  MIO Configuration
+      - Set UART1 `MIO 48 .. 49`
+      - Set disable GPIO MIO50 pull-up
+      - Set disable GPIO MIO51 pull-up
+    - Clock Configuration
+      - Set PL Fabric Clocks > FCLK_CLK0 100
+  - `BLOCK DESIGN` > `Diagram` > `+ button to add IP` > `AXI GPIO`
+  - `BLOCK DESIGN` > `Diagram` > `Run Connection Automation`
+    - Enable S_AXI
+  - `Processing System Block` > `FCLK_CLK0` > `Create port`
+    - Set `Port name` to `ps_clk`
+  - `Processing System Block` > `peripheral_aresetn[0:0]` > `Create port`
+    - Set `Port name` to `ps_nrst`
+  - `axi_gpio_0` > `Customize Block`
+    - Enable `IP Configuration` > `Enable Dual Channel`
+  - `axi_gpio_0` > `GPIO +` >  `gpio_io_i[31:0]` > `Create Port`
+    - Set `Port name` to `ps_gpio_i0`
+  - `axi_gpio_0` > `GPIO +` >  `gpio_io_o[31:0]` > `Create Port`
+    - Set `Port name` to `ps_gpio_o0`
+  - `axi_gpio_0` > `GPIO2 +` >  `gpio2_io_i[31:0]` > `Create Port`
+    - Set `Port name` to `ps_gpio_i1`
+  - `axi_gpio_0` > `GPIO2 +` >  `gpio2_io_o[31:0]` > `Create Port`
+    - Set `Port name` to `ps_gpio_o1`
+  - `Diagram` > `Validate Design`
+  - `Flow Navigator` > `IP Integrator` > `Generate Block Design` > `Generate`
+  - Confirm `Flow Navigator` > `Project Manager` > `Sources` > `Design Sources` > `Zynq_PS`
 
 <div align="center"><img src="imgs/connect-processing-system-clock.jpg" width="500"></div>
-
-- Create HDL Wrapper of the Processing System
-  - `BLOCK DESIGN` > `Sources` > `Design Sources` > `system (system.bd)` > `Create HDL Wrapper`
-    - Select `Let Vivado manage wrapper and auto-update`
 
 ### 3.5. Set Top-Level Entity
 - `PROJECT MANAGER` > `Sources` > `Dedign Sources` > `AutonomousVehicle(AutonomousVehicle.vhd)`
   - Select `Set as Top`
 
-### 3.6. Generate Bitstream
-- `Flow Navigator` > `PROGRAM AND DEBUG` > `Generate Bitstream`
+### 3.6. Compilation
+- `Flow Navigator` > `Synthesis` > `Run Synthesis`
+- `Flow Navigator` > `Implementation` > `Run Implementation`
+- `Flow Navigator` > `Program and Debug` > `Generate Bitstream`
 
 ### 3.7. Export Hardware
 - `File` > `Export` > `Export Hardware` > `Include bitstream/binary`
