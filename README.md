@@ -147,3 +147,37 @@ wget https://raw.githubusercontent.com/Digilent/digilent-xdc/refs/heads/master/Z
 - `File` > `Export` > `Export platform` > `Hardware` > `Include bitstream/binary`
   - Select `Include bitstream`
   - XSA file name: `system`
+
+### 3.8. Open Vitis IDE
+- Set `File` > `Set Workspace` to `C:\Users\admin\Documents\autonomous-vehicle\Zybo-Z7\Vitis\`
+
+### 3.9. Create Platform
+- `File` > `New Component` > `Platform`
+  - `Component Name`: `platform`
+  - `Conponent Location`: `C:\Users\admin\Documents\autonomous-vehicle\Zybo-Z7\Vitis\`
+  - Enable `Select Platform Creation Flow` > `Hardware Design`
+  - Add `C:\Users\admin\Documents\autonomous-vehicle\Zybo-Z7\system.xsa` to `Hardware Design (XSA) For Implementation`
+  - `Finish`
+- `Flow` > `Component` > `platform` > `Build`
+
+### 3.10. Create Application
+- `File` > `New Component` > `Application`
+  - `Name and Location`
+    - `Component name`: `application`
+    - `Component location`: `C:\Users\admin\Documents\autonomous-vehicle\Zybo-Z7\Vitis\`
+  - `Select Platform`: `platform`
+  - `Finish`
+- `application` > `Sources` > `src`
+  - Create `main.c`
+- `Flow` > `Component` > `application` > `Build`
+
+### 3.11. Create Boot Image
+- Select `Flow` > `Component` > `application`
+- `Vitis` > `Create Boot Image` > `Zynq`
+  - Enable `Create a new BIF file`
+  - Add `C:\Users\admin\Documents\autonomous-vehicle\Zybo-Z7\Vitis\platform\export\platform\sw\boot\fsbl.elf` as `bootloader`
+  - Add `C:\Users\admin\Documents\autonomous-vehicle\Zybo-Z7\AutonomousVehicle.runs\impl_1\AutonomousVehicle.bit` as `datafile`
+  - Add `C:\Users\admin\Documents\autonomous-vehicle\Zybo-Z7\Vitis\application\build\application.elf` as `datafile`
+  - Set `Output BIF File Path` to `c:\Users\admin\Documents\autonomous-vehicle\Zybo-Z7\system.bif`
+  - Set `Outout Image` to `C:\Users\admin\Documents\autonomous-vehicle\Zybo-Z7\BOOT.bin`
+  - `Create Image`
