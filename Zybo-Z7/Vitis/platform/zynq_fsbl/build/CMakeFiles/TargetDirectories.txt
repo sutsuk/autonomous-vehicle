@@ -1,0 +1,3 @@
+C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/Vitis/platform/zynq_fsbl/build/CMakeFiles/fsbl.elf.dir
+C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/Vitis/platform/zynq_fsbl/build/CMakeFiles/edit_cache.dir
+C:/Users/admin/Documents/autonomous-vehicle/Zybo-Z7/Vitis/platform/zynq_fsbl/build/CMakeFiles/rebuild_cache.dir
